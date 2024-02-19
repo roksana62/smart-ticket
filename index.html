@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisi ui and tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>E Ticket</title>
+</head>
+<body class="font-raleway mx-32 mt-10">
+    <header>
+       <section class="nav-section">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-4xl font-bold">E-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex ">
+                  <ul class="menu menu-horizontal px-1 ">
+                    <li><a class="font-medium">Home</a></li>
+                   
+                    <li><a class="font-medium">About</a></li>
+                    <li><a class="font-medium">Destination</a></li>
+                    <li><a class="font-medium">Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn text-[#1DD100] border-1 border-[#1DD100] rounded-xl">Bus <span><img src="images/bus-icon.png" alt=""></span></a>
+                </div>
+              </div>
+        </nav>
+       </section>
+       <section id="banner"  class="banner-section bg-contain min-h-screen bg-no-repeat mt-10" style="background-image: url('images/banner.png'); position: relative;">
+        <!-- <img src="images/banner.png" alt=""> -->
+        <div id="banner_text" class="text-white  text-center">
+            <h1 class="font-bold text-5xl mb-5 mt-[100px]">End to End Travel Journey with <br> <span class="text-[#1DD100]">Shemoly Express</span></h1>
+            <p class=" mb-4"> Yes, you can run unit tests and view the results directly within the app. The <br>integrated testing features allow for a streamlined .
+            </p>
+            <button class="btn bg-[#1DD100] text-black font-bold">Buy Ticket</button>
+        </div>
+        <div id="banner_des" class="flex gap-10 mx-auto ml-16 ">
+            <div class="flex bg-white w-[400px] h-36 rounded-3xl p-5 py-10 gap-4 border-b-4 border-[#1DD100]">
+                <img src="images/people.png" alt="" class="w-[50px] h-[50px]"> 
+                <p class="font-bold text-4xl"> 500k+ <br><span class="text-lg font-normal text-gray-400">Registered users</span></p>
+            </div>
+            <div class="flex bg-white w-[400px] h-36 rounded-3xl p-5 py-10 gap-4 border-b-4 border-[#1DD100]">
+                <img src="images/ticket-cupon.png" alt="" class="w-[50px] h-[50px]"> 
+                <p class="font-bold text-4xl"> 1.7 lacks <br><span class="text-lg font-normal text-gray-400">Ticket sold</span></p>
+            </div>
+            <div class="flex bg-white w-[400px] h-36 rounded-3xl p-5 py-10 gap-4 border-b-4 border-[#1DD100]">
+                <img src="images/stoppage.png" alt="" class="w-[50px] h-[50px]"> 
+                <p class="font-bold text-4xl"> 80k+ <br><span class="text-lg font-normal text-gray-400">Rental partners</span></p>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+       </section>
+    </header>
+    <main>
+        <section id="offer_section">
+            <h1 class="font-raleway font-bold text-5xl text-black text-center my-14"> Best offers for you
+            </h1>
+            <div class="flex gap-4">
+                <div  class="flex gap-10 w-[550px] h-[220px] bg-yellow-500 rounded-3xl p-[50px] ">
+                    <div class="font-inter pr-5" id="ticker_container">
+                        <h1 class="font-extrabold text-5xl">15% off</h1>
+                        <p class="font-semibold text-xl">on your next purchase</p>
+                        <p class="font-medium text-xl text-gray-500">use by January 2024 </p>
+                    </div>
+    
+                    <div class="font-raleway">
+                       <h1 class="font-bold text-4xl text-black"> NEW15</h1>
+                       <p class="font-medium text-2xl text-gray-500">Coupon Code</p>
+                    </div>
+                </div>
+                <div  class="flex gap-5 w-[550px] h-[220px] bg-pink-400 rounded-3xl p-[50px] ">
+                    <div class="font-inter pr-5" id="ticker_container">
+                        <h1 class="font-extrabold text-5xl">20% off</h1>
+                        <p class="font-semibold text-xl">on your next purchase</p>
+                        <p class="font-medium text-xl text-gray-500">use by January 2024 </p>
+                    </div>
+    
+                    <div class="font-raleway">
+                       <h1 class="font-bold text-4xl text-black">Couple 20</h1>
+                       <p class="font-medium text-2xl text-gray-500">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" my-10 mx-auto flex justify-center">
+                <button class="btn text-[#1DD100] border-1 border-[#1DD100] rounded-xl font-bold text-xl ">See All Offers </button>
+              </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
