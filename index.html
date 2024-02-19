@@ -137,7 +137,7 @@
                 </div>
                   <!-- seat logo -->
                 <div >
-                  <a class="btn text-[#1DD100] border-1 border-[#1DD100] rounded-xl"><span><img src="images/seat-green.png" alt=""></span>40 seats left </a>
+                  <button id="seat_left" class="font-inter btn text-[#1DD100] border-1 border-[#1DD100] rounded-xl"><img src="images/seat-green.png" alt="">40 seats left </button>
                 </div>
               </div>
               <!-- route -->
@@ -169,10 +169,156 @@
               </div>
              </div>
             </div>
+
+            <!-- Seat selection section -->
+
+            <div class="flex justify-between gap-8 mx-32 mt-10 bg-white p-8 rounded-2xl">
+              <!-- left side -->
+              <div class="flex-1">
+                <div>
+                  <h2 class="font-semibold text-xl mb-5 pb-5 border-b-2 border-gray-300 border-dashed">Select Your Seat</h2>
+                  <div class="flex justify-between border-b-2 border-gray-300 border-dashed mb-5 pb-5">
+                    <div class="flex">
+                      <img src="images/seat-gray.png" alt="">
+                      <p class="font-semibold">Available</p>
+                    </div>
+                    <div class="flex">
+                      <img src="images/seat-green.png" alt="">
+                      <p  class="text-[#1DD100] font-bold">Selected</p>
+                    </div>
+                  </div>
+                  
+                </div>
+                <!-- seat btn -->
+             <div>
+              <div class="flex justify-end mb-4">
+                <button class="btn btn-active  ">  <img src="images/sterreng.png" alt="">  </button>
+              </div>
+              <div id="every_seat" class="grid grid-cols-5 gap-5 ">
+                <!-- Seats for group A -->
+                <button class=" ">A</button>
+                <button class="btn btn-active">A1</button>
+                <button class="btn btn-active">A2</button>
+                <button class="btn btn-active">A3</button>
+                <button class="btn btn-active">A4</button>
+              
+                <!-- Seats for group B -->
+                
+                <button class="">B</button>
+                <button class="btn btn-active">B1</button>
+                <button class="btn btn-active">B2</button>
+                <button class="btn btn-active">B3</button>
+                <button class="btn btn-active">B4</button>
+              
+                <!-- Seats for group C -->
+               
+                <button >C</button>
+                <button class="btn btn-active">C1</button>
+                <button class="btn btn-active">C2</button>
+                <button class="btn btn-active">C3</button>
+                <button class="btn btn-active">C4</button>
+                <button >D</button>
+                <button class="btn btn-active">D3</button>
+                <button class="btn btn-active">D4</button>
+                <button class="btn btn-active">D1</button>
+                <button class="btn btn-active">D2</button>
+                <button >E</button>
+                <button class="btn btn-active">E1</button>
+                <button class="btn btn-active">E2</button>
+                <button class="btn btn-active">E3</button>
+                <button class="btn btn-active">E4</button>
+                <button class=" ">F</button>
+                <button class="btn btn-active">F1</button>
+                <button class="btn btn-active">F2</button>
+                <button class="btn btn-active">F3</button>
+                <button class="btn btn-active">F4</button>
+              
+                <!-- Seats for group B -->
+                
+                <button class="">G</button>
+                <button class="btn btn-active">G1</button>
+                <button class="btn btn-active">G2</button>
+                <button class="btn btn-active">G3</button>
+                <button class="btn btn-active">G4</button>
+              
+                <!-- Seats for group C -->
+               
+                <button >H</button>
+                <button class="btn btn-active">H1</button>
+                <button class="btn btn-active">H2</button>
+                <button class="btn btn-active">H3</button>
+                <button class="btn btn-active">H4</button>
+                <button >I</button>
+                <button class="btn btn-active">I3</button>
+                <button class="btn btn-active">I4</button>
+                <button class="btn btn-active">I1</button>
+                <button class="btn btn-active">I2</button>
+                <button >J</button>
+                <button class="btn btn-active">J1</button>
+                <button class="btn btn-active">J2</button>
+                <button class="btn btn-active">J3</button>
+                <button class="btn btn-active">J4</button>
+              </div>
+             </div>
+               
+              </div>
+              <!-- right side -->
+              <div class="flex-1 ">
+                <div >
+                  <h2 class="font-semibold text-xl mb-5 pb-5 border-b-2 border-gray-300 border-dashed">Select Your Seat</h2>
+                </div>
+                <div class="font-inter bg-[#F7F8F8] p-10 rounded-2xl">
+                  <div class="flex justify-between font-semibold  border-b-2 border-gray-300 border-dashed pb-5 mb-4">
+                    <div class="flex">
+                      <h3 id="seat_name">Seat</h3>
+                      <button id="seat_counter" class="w-5 h-6 bg-[#1DD100]">0</button>
+                    </div>
+                    <h3 id="seat_cls">Class</h3>
+                    <h3 id="seat_pp">Price</h3>
+                  </div>
+               <div class="border-b-2 border-gray-400 border-solid pb-5 mb-4">
+                <div class="flex justify-between">
+                  <p >C2</p>
+                  <p>Economy</p>
+                  <p>550</p>
+                </div>
+                <div class="flex justify-between">
+                  <p id="seat_name">C3</p>
+                  <p id="seat_cls">Economy</p>
+                  <p id="seat_pp">550</p>
+                </div>
+               </div>
+               <div class="flex justify-between font-semibold">
+                <h3>Total Price</h3>
+                    <h3>BDT 1100</h3>
+               </div>
+
+               <div class="flex items-center my-5">
+                <input type="text" placeholder="Have any coupon?" class="border border-gray-300 px-6 py-4 rounded-l-xl" />
+                <button type="submit" class="bg-[#1DD100] hover:bg-green-700 text-white font-bold py-4 px-6 rounded-r-xl">Submit</button>
+              </div>
+              <div class="flex justify-between font-semibold">
+                <h3>Grand Total </h3>
+                    <h3>BDT 1100</h3>
+               </div>
+                </div>
+                
+                <div>
+                  <h2 class="font-semibold text-xl my-5 ">Passenger Name*</h2>
+                  <input type="text" name="" id="" placeholder="Enter your name" class="border border-gray-300 px-6 py-4 rounded-xl w-full">
+                  <h2 class="font-semibold text-xl my-5 ">Phone Number*</h2>
+                  <input type="text" name="" id="" placeholder="Enter your name" class="border border-gray-300 px-6 py-4 rounded-xl w-full">
+                  <h2 class="font-semibold text-xl my-5 ">Email ID</h2>
+                  <input type="text" name="" id="" placeholder="Enter your name" class="border border-gray-300 px-6 py-4 rounded-xl w-full">
+                  <button type="submit" class="bg-[#1DD100] hover:bg-green-700 text-white font-bold py-4 px-6 rounded-xl w-full mt-8">Next</button>
+                </div>
+              </div>
+            </div>
           </section>
     </main>
     <footer>
 
     </footer>
+    <script src="style.js"></script>
 </body>
 </html>
